@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-  <title>aryanpro</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="style.css" rel="stylesheet">
+  <title>{{ title }}</title>
+  <link href="/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -14,17 +13,13 @@
       <a href="" class="brand">aryanpro</a>
       <a href="">Contact</a>
       <a href="">Portfolio</a>
-      <a href="" class="active">Home</a>
+      <a href="">Home</a>
     </div>
   </nav>
 
   <div class="container">
-    <h1>Hi there! I'm Aryan, </h1>
-    <h1 class="typewriter"></h1>
+    {{ content | safe }}
   </div>
-
-
-  <script src="script.js"></script>
 </body>
 
 </html>
