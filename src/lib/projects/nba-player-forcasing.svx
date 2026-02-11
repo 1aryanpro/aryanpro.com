@@ -1,0 +1,57 @@
+---
+title: NBA Player Stat Forecasting
+date: 2025-01-28
+summary: Two-stage probabilistic model for forecasting NBA player statistics, separating availability from production to reduce variance.
+langs: [Python]
+tags: [Bayesian Modeling, Sports Analytics]
+links:
+  repo: https://github.com/yourname/nba-player-forecasting
+---
+
+## Problem
+
+Directly predicting player box-score statistics suffers from high variance due to fluctuations in playing time. A player scoring 8 points in 12 minutes is fundamentally different from scoring 8 points in 36 minutes, but naive models treat them similarly.
+
+This project addresses that issue by modeling **availability and production separately**.
+
+## Modeling Approach
+
+The system uses a two-stage pipeline:
+
+1. **Minutes Model**
+   Predicts expected minutes played based on recent usage, opponent context, and game conditions.
+
+2. **Production Model**
+   Predicts per-minute rates (points, rebounds, assists), conditioned on the predicted minutes from stage one.
+
+The final forecast is produced by combining both stages into a single probabilistic output.
+
+## Statistical Methods
+
+- Bayesian hierarchical regression with partial pooling
+- Player-level and opponent-level effects
+- Weakly informative priors to stabilize estimates under sparse data
+
+Partial pooling allows the model to borrow strength across similar contexts while still learning player-specific behavior.
+
+## Evaluation
+
+To avoid data leakage, all models were evaluated using a walk-forward backtesting framework:
+
+- Train on games `< t`
+- Predict game `t`
+- Roll forward one game at a time
+
+Performance was measured using:
+- Mean Absolute Error (MAE)
+- Prediction interval coverage
+- Calibration diagnostics
+
+## Results & Insights
+
+- Separating minutes from production reduced prediction variance
+- Hierarchical structure improved stability early in the season
+- Interval forecasts were better calibrated than point estimates alone
+
+This project reflects my interest in probabilistic modeling, leakage-safe evaluation, and applying statistical rigor to real-world prediction problems.
+

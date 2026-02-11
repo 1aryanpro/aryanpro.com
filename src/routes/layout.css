@@ -2,12 +2,74 @@
 @import 'tailwindcss';
 
 @theme {
-    --color-brand: var(--color-violet-400);
-    --color-surface: var(--color-slate-100);
+    --color-*: initial;
+    --color-purple: #9caaf2;
+    --color-purple-fg: #7870ad;
+
+    --color-red: #ff6a3d;
+    --color-yellow: #f9db6c;
+    --color-white: #ffffff;
+
+    --color-ink: #1a2238;
+
+    --color-canvas: #ffffff;
+    --color-surface: #f8f8fb;
+
+    --font-sans: "fieldwork";
+    --color-text: var(--color-ink);
 }
 
 @layer base {
     body {
         @apply bg-surface;
+    }
+
+    .responsive-width {
+        @apply mx-auto max-w-9/10 w-4xl;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-bold;
+    }
+
+    p {
+        font-family: "fieldwork-hum";
+    }
+
+    .pill {
+        @apply py-1 px-3 rounded-full border-purple border-2 text-lg text-purple font-bold whitespace-nowrap;
+    }
+
+    .pill-red {
+        @apply border-red text-red;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex items-center justify-center rounded-xl bg-purple text-ink text-lg px-5 py-3 font-semibold;
+    }
+
+    .hero {
+        @apply bg-ink text-surface pt-8 pb-4;
+    }
+
+    .hero>div {
+        @apply mx-auto max-w-9/10 w-4xl;
+    }
+
+    .hero h1 {
+        @apply text-6xl mb-1;
+    }
+
+    .hero p {
+        @apply text-xl;
+    }
+
+    .card {
+        @apply flex flex-col h-full bg-white text-ink border-purple border-2 rounded-2xl px-4 py-3.5;
     }
 }

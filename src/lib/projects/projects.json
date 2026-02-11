@@ -1,0 +1,85 @@
+[
+    {
+        "slug": "os-scheduler-sim",
+        "title": "OS Scheduler Simulation",
+        "date": "2025-04-07",
+        "featured": true,
+        "summary": "Multithreaded C simulation of FCFS, Round Robin, SRTF, and priority aging schedulers, used to compare latency and fairness under varying workloads.",
+        "langs": [
+            "C"
+        ],
+        "tags": [
+            "Operating Systems",
+            "Concurrency"
+        ],
+        "links": {
+            "repo": "https://github.com/yourname/os-scheduler-sim"
+        }
+    },
+    {
+        "slug": "buffet-waste-tracker",
+        "title": "Buffet Waste Tracking System",
+        "date": "2025-04-18",
+        "featured": true,
+        "summary": "Data collection and analysis system for tracking prepared vs leftover quantities in a buffet environment, enabling trend analysis and waste reduction.",
+        "langs": [
+            "SQL"
+        ],
+        "tags": [
+            "Data Engineering",
+            "Analytics"
+        ],
+        "links": {
+            "demo": "https://your-site.com/buffet-demo"
+        }
+    },
+    {
+        "slug": "indicator-backtester",
+        "title": "Technical Indicator Backtesting Engine",
+        "date": "2024-12-15",
+        "summary": "Implemented technical indicators and a backtesting framework using live market APIs, supporting walk-forward evaluation and basic risk metrics.",
+        "langs": [
+            "Python"
+        ],
+        "tags": [
+            "Finance",
+            "Backtesting"
+        ],
+        "links": {
+            "repo": "https://github.com/yourname/indicator-backtester"
+        }
+    },
+    {
+        "slug": "nba-pbp-scraper",
+        "title": "NBA Play-by-Play Data Pipeline",
+        "date": "2025-01-20",
+        "summary": "Automated pipeline for scraping and structuring NBA play-by-play data at scale, designed for downstream player-level modeling and analysis.",
+        "langs": [
+            "Python"
+        ],
+        "tags": [
+            "Data Pipelines",
+            "Sports Analytics"
+        ],
+        "links": {
+            "repo": "https://github.com/yourname/nba-pbp-pipeline"
+        }
+    },
+    {
+        "slug": "trading-log-app",
+        "title": "Trading Log & Analysis Tool",
+        "date": "2024-11-30",
+        "featured": false,
+        "summary": "Lightweight web app for recording discretionary trades and post-trade analysis, with structured logs and performance summaries.",
+        "langs": [
+            "SvelteKit"
+        ],
+        "tags": [
+            "Finance",
+            "Full Stack"
+        ],
+        "links": {
+            "demo": "https://your-site.com/trading-log"
+        }
+    }
+]
