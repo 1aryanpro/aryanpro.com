@@ -14,7 +14,7 @@
             >
                 Aryan Prodduturi
             </h1>
-            <p>I'm a software engineer who focuses on...</p>
+            <p>Software Developer - BSCS @ Georgia Tech</p>
         </div>
         <div class="flex flex-col flex-1 gap-2">
             <a class="btn" href="/resume.pdf">Resume</a>
@@ -25,16 +25,26 @@
 
 <section class="responsive-width mt-6">
     <h2 class="text-4xl text-purple-fg">About Me:</h2>
-    <p class="text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus
-        ex sapien vitae pellentesque sem placerat in id cursus mi pretium tellus
-        duis convallis tempus leo eu aenean sed diam urna tempor pulvinar
-        vivamus fringilla lacus nec metus bibendum egestas iaculis massa nisl
-        malesuada lacinia integer nunc posuere ut hendrerit semper vel class
-        aptent taciti sociosqu ad litora torquent per conubia nostra inceptos
-        himenaeos orci varius natoque penatibus et magnis dis parturient montes
-        nascetur ridiculus.
+    <p class="text-xl/6 mb-1.5">
+        I'm a Computer Science student at Georgia Tech with concentrations in
+        theory and simulation.
     </p>
+    <p class="text-xl/6 mb-1.5">
+        Outside of programming, I have a strong background in mathematics due to
+        my concentrations. I have also taken multiple courses in other subject
+        areas like economics, physics, and psychology.
+    </p>
+    <p class="text-xl/6 mb-1.5">
+        While I’ve worked across the board, I’m especially drawn to highly
+        technical fields that demand deep problem-solving, mathematical
+        reasoning, and careful modeling. I’m motivated by complex systems and
+        challenging questions that require precision and intellectual depth to
+        answer, and I’m excited by opportunities to continue developing in
+        technically demanding environments.
+    </p>
+    <p class="text-xl/6">Take a look at <a href="/projects" class="text-red
+        underline">my projects</a> to see
+    what I'm about.</p>
 </section>
 
 <section class="responsive-width mt-6">

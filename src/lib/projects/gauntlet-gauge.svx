@@ -1,0 +1,45 @@
+---
+title: Gauntlet Gauge
+date: 2026-02-10
+featured: true
+summary: Native macOS utility for monitoring dual-battery Bluetooth devices, specifically for split wireless keyboards.
+langs: [Swift]
+tags: [macOS, Bluetooth]
+links:
+  repo: https://github.com/yourname/gauntlet-gauge
+---
+
+## Problem
+
+The native bluetooth menu on macos only displays the first reported battery
+level from a multi-battery device with no way of viewing the other battery
+levels. Gauntlet Gauge is a native macOS utility that displays the individual battery levels of Bluetooth devices with two power sources, specifically built for split wireless keyboards where each half reports battery independently.
+
+## Overview
+
+Gauntlet Gauge provides:
+
+- Real-time monitoring of both keyboard halves
+- A consolidated menu bar display
+- Lightweight background operation with minimal overhead
+- Notifications on low battery for either device
+
+## Design Goals
+
+- Zero configuration after initial device selection
+- Minimal CPU and memory footprint
+- Immediate visibility of low battery conditions
+- Native MacOS
+
+## Architecture
+
+- Bluetooth device discovery via macOS IOBluetooth APIs
+- Periodic polling and event-driven battery updates
+- Status bar UI using NSStatusItem
+
+## Challenges
+
+After completing the app, I struggled to get it listed on the app store due to
+Apple's rigourous review process. I had to go through a couple iterations with
+their support team but it was taking a while to get responses.
+

@@ -21,7 +21,7 @@ export const load = async () => {
     // Optional: guard against duplicates by title+date (or by repo link)
     // Keeping it simple: just concatenate.
     const projects = [...full, ...short]
-        .filter((p) => p?.title && p?.slug && p?.date);
+        .filter((p) => p?.title && p?.date);
 
     // Sort: featured first, then newest date first
     projects.sort((a, b) => {

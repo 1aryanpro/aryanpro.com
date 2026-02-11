@@ -12,7 +12,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<nav class="sticky top-0 z-50 py-5 md:px-2 bg-ink">
+<nav class="py-5 md:px-2 bg-ink">
     <div class="responsive-width flex justify-between text-surface">
         <a href="/" class="text-3xl font-bold">aryan<span class="text-purple">pro</span></a>
         <div class="flex items-center">

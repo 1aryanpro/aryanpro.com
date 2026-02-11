@@ -40,7 +40,7 @@
     }
 
     .pill {
-        @apply py-1 px-3 rounded-full border-purple border-2 text-lg text-purple font-bold whitespace-nowrap;
+        @apply py-0.5 px-3 rounded-full border-purple border-2 text-lg text-purple font-bold whitespace-nowrap;
     }
 
     .pill-red {
