@@ -2,6 +2,7 @@
 title: NBA Player Stat Forecasting
 date: 2025-01-28
 summary: Two-stage probabilistic model for forecasting NBA player statistics, separating availability from production to reduce variance.
+featured: true
 langs: [Python]
 tags: [Bayesian Modeling, Analytics]
 links:

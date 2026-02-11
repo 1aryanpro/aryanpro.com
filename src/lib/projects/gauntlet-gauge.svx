@@ -1,7 +1,6 @@
 ---
 title: Gauntlet Gauge
 date: 2026-02-10
-featured: true
 summary: Native macOS utility for monitoring dual-battery Bluetooth devices, specifically for split wireless keyboards.
 langs: [Swift]
 tags: [macOS, Bluetooth]
