@@ -4,7 +4,7 @@
 @theme {
     --color-*: initial;
     --color-purple: #9caaf2;
-    --color-purple-fg: #7870ad;
+    --color-purple-fg: #9890cd;
 
     --color-red: #ff6a3d;
     --color-yellow: #f9db6c;
@@ -21,11 +21,11 @@
 
 @layer base {
     body {
-        @apply bg-surface;
+        @apply bg-surface min-h-screen flex flex-col;
     }
 
     .responsive-width {
-        @apply mx-auto max-w-9/10 w-4xl;
+        @apply mx-auto w-full max-w-2xl px-4 md:px-0 lg:max-w-4xl 2xl:max-w-6xl;
     }
 
     h1,
@@ -50,15 +50,19 @@
 
 @layer components {
     .btn {
-        @apply flex items-center justify-center rounded-xl bg-purple text-ink text-lg px-5 py-3 font-semibold;
+        @apply flex items-center justify-center h-10 rounded-xl bg-purple text-ink text-lg px-5 py-3 font-semibold;
+    }
+
+    .btn-compact {
+        @apply p-2 bg-transparent border-2 border-purple text-purple underline;
+    }
+
+    .orange .btn-compact {
+        @apply border-red text-red;
     }
 
     .hero {
         @apply bg-ink text-surface pt-8 pb-4;
-    }
-
-    .hero>div {
-        @apply mx-auto max-w-9/10 w-4xl;
     }
 
     .hero h1 {
@@ -70,6 +74,6 @@
     }
 
     .card {
-        @apply flex flex-col h-full bg-white text-ink border-purple border-2 rounded-2xl px-4 py-3.5;
+        @apply flex flex-col gap-2 h-full bg-white text-ink border-purple border-2 rounded-2xl px-4 py-3.5;
     }
 }

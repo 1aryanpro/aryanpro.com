@@ -10,18 +10,20 @@
     <div class="flex gap-8">
         <div class="flex-3">
             <h1
-                class="underline decoration-purple decoration-6 underline-offset-5"
+                class="underline decoration-purple decoration-6
+                underline-offset-5 text-8xl"
             >
                 Aryan Prodduturi
             </h1>
             <p>Software Developer - BSCS @ Georgia Tech</p>
         </div>
-        <div class="flex flex-col flex-1 gap-2">
-            <a class="btn" href="/resume.pdf">Resume</a>
-            <a class="btn" href="/projects">Projects</a>
-        </div>
     </div>
 </Hero>
+
+<section class="responsive-width flex gap-2">
+    <a class="btn flex-1" href="/resume.pdf">Resume</a>
+    <a class="btn flex-1" href="/projects">Projects</a>
+</section>
 
 <section class="responsive-width mt-6">
     <h2 class="text-4xl text-purple-fg">About Me:</h2>
@@ -36,15 +38,19 @@
     </p>
     <p class="text-xl/6 mb-1.5">
         While I’ve worked across the board, I’m especially drawn to highly
-        technical fields that demand deep problem-solving, mathematical
+        technical fields that demand deep problem solving, mathematical
         reasoning, and careful modeling. I’m motivated by complex systems and
         challenging questions that require precision and intellectual depth to
         answer, and I’m excited by opportunities to continue developing in
         technically demanding environments.
     </p>
-    <p class="text-xl/6">Take a look at <a href="/projects" class="text-red
-        underline">my projects</a> to see
-    what I'm about.</p>
+    <p class="text-xl/6">
+        Take a look at <a
+            href="/projects"
+            class="text-red
+        underline">my projects</a
+        > to see what I'm about.
+    </p>
 </section>
 
 <section class="responsive-width mt-6">
@@ -56,4 +62,3 @@
     </div>
 </section>
 
-<div class="h-15"></div>

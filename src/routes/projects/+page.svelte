@@ -13,7 +13,7 @@
     <p>Here's some of the projects that I've worked on.</p>
 </Hero>
 
-<div class="responsive-width w-6xl grid grid-cols-3 gap-4">
+<div class="responsive-width px-10 md:px-0 grid grid-cols-1 lg:grid-cols-3 gap-4">
     {#each projects as project}
         <ProjectCard {...project} />
     {/each}

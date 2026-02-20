@@ -3,7 +3,6 @@
         "company": "Sri Radha’s Veg Cuisine",
         "role": "Fullstack Developer",
         "start": "2025",
-        "end": "2025",
         "bullets": [
             "Designed and built a centralized digital menu display system enabling real-time content updates.",
             "Developed food waste tracking and forecasting tools to analyze consumption patterns."
@@ -13,7 +12,6 @@
         "company": "Arkaya Yoga Studio",
         "role": "Website Manager",
         "start": "2025",
-        "end": "2025",
         "bullets": [
             "Led website updates following a brand re-launch, improving SEO structure, page performance, and user experience.",
             "Automated blog publishing and marketing workflows using WordPress and custom scripts."
@@ -23,7 +21,6 @@
         "company": "Khan Lab School",
         "role": "High School Math Teacher",
         "start": "2024",
-        "end": "2024",
         "bullets": [
             "Designed and taught an accredited, project-based geometry course aligned with state and institutional standards.",
             "Applied mastery-based assessment techniques to track student progress and ensure conceptual understanding."
@@ -33,7 +30,6 @@
         "company": "Big Data Trunk",
         "role": "Programming Intern",
         "start": "2021",
-        "end": "2021",
         "bullets": [
             "Developed a Python-based data analysis toolkit to automatically generate key metrics and visualizations.",
             "Improved data processing efficiency by standardizing analysis workflows and reusable components."

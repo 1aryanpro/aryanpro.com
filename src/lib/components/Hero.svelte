@@ -3,7 +3,7 @@
 
 </script>
 <section class="hero">
-    <div>
+    <div class="responsive-width text-center">
         <slot />
     </div>
 </section>
