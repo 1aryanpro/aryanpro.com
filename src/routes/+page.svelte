@@ -20,37 +20,37 @@
     </div>
 </Hero>
 
-<section class="responsive-width flex gap-2">
-    <a class="btn flex-1" href="/resume.pdf">Resume</a>
-    <a class="btn flex-1" href="/projects">Projects</a>
+<section class="responsive-width flex gap-2 mt-3">
+    <a class="btn flex-1 h-12 text-xl" href="/resume.pdf">Resume</a>
+    <a class="btn flex-1 h-12 text-xl bg-red" href="/projects">Projects</a>
 </section>
 
 <section class="responsive-width mt-6">
     <h2 class="text-4xl text-purple-fg">About Me:</h2>
-    <p class="text-xl/6 mb-1.5">
-        I'm a Computer Science student at Georgia Tech with concentrations in
-        theory and simulation.
-    </p>
-    <p class="text-xl/6 mb-1.5">
-        Outside of programming, I have a strong background in mathematics due to
-        my concentrations. I have also taken multiple courses in other subject
-        areas like economics, physics, and psychology.
-    </p>
-    <p class="text-xl/6 mb-1.5">
-        While I’ve worked across the board, I’m especially drawn to highly
-        technical fields that demand deep problem solving, mathematical
-        reasoning, and careful modeling. I’m motivated by complex systems and
-        challenging questions that require precision and intellectual depth to
-        answer, and I’m excited by opportunities to continue developing in
-        technically demanding environments.
-    </p>
-    <p class="text-xl/6">
-        Take a look at <a
-            href="/projects"
-            class="text-red
-        underline">my projects</a
-        > to see what I'm about.
-    </p>
+    <div class="text-xl/6 space-y-3">
+        <p>
+            I'm a Computer Science student at Georgia Tech with concentrations
+            in theory and simulation.
+        </p>
+        <p>
+            Outside of programming, I have a strong background in mathematics
+            due to my concentrations. I have also taken multiple courses in
+            other subject areas like economics, physics, and psychology.
+        </p>
+        <p>
+            While I’ve worked across the board, I’m especially drawn to highly
+            technical fields that demand deep problem solving, mathematical
+            reasoning, and careful modeling. I’m motivated by complex systems
+            and challenging questions that require precision and intellectual
+            depth to answer, and I’m excited by opportunities to continue
+            developing in technically demanding environments.
+        </p>
+        <p>
+            Take a look at
+            <a href="/projects" class="text-red underline">my projects</a>
+            to see what I'm about.
+        </p>
+    </div>
 </section>
 
 <section class="responsive-width mt-6">
@@ -61,4 +61,3 @@
         {/each}
     </div>
 </section>
-
