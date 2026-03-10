@@ -1,40 +1,43 @@
 ---
 title: Gauntlet Gauge
-date: 2026-02-10
-summary: Native macOS utility for monitoring dual-battery Bluetooth devices, specifically for split wireless keyboards.
+date: 2025-03
+summary: Native macOS menu bar utility for monitoring dual-battery Bluetooth devices, specifically for split wireless keyboards. Also provides configurable low battery notifications.
 langs: [Swift]
 tags: [macOS, Bluetooth]
 links:
-  repo: https://github.com/yourname/gauntlet-gauge
+  repo: https://github.com/1aryanpro/Gauntlet-Gauge
 ---
 
-## Problem
+The native Bluetooth menu on MacOS only displays the first reported battery
+level regardless of how many battery levels are reported by the device. There is
+no way to view the other battery levels, even by editing your settings or
+changing the Bluetooth settings.
 
-The native bluetooth menu on macos only displays the first reported battery
-level from a multi-battery device with no way of viewing the other battery
-levels. Gauntlet Gauge is a native macOS utility that displays the individual battery levels of Bluetooth devices with two power sources, specifically built for split wireless keyboards where each half reports battery independently.
+This is a problem I wanted solve for those with split wireless keyboards. Since
+we connect our keyboard to the computer as one Bluetooth device, it's hard to
+monitor the battery level of the peripheral keyboard especially since my
+keyboard doesn't have any battery level indicators on it.
 
 ## Overview
 
-Gauntlet Gauge provides:
-
-- Real-time monitoring of both keyboard halves
-- A consolidated menu bar display
-- Lightweight background operation with minimal overhead
-- Notifications on low battery for either device
+Gauntlet Gauge is a MacOS I developed that creates a menu bar item showing the
+battery level of both the main and peripheral sides of the keyboard. There is
+also an option to receive low battery notifications at an adjustable level.
 
 ## Design Goals
 
-- Zero configuration after initial device selection
-- Minimal CPU and memory footprint
-- Immediate visibility of low battery conditions
-- Native MacOS
+First and foremost I wanted to make sure the app was developed natively in
+MacOS and have sensible defaults so most users can simply download the app and
+have it working. I kept all the menus as simple as possible and only added
+things that were necessary for the function of the app.
 
 ## Architecture
 
-- Bluetooth device discovery via macOS IOBluetooth APIs
-- Periodic polling and event-driven battery updates
-- Status bar UI using NSStatusItem
+While this was a pretty simple app, I learned how to use a bunch of different
+device apis that I wasn't familiar with:
+- Bluetooth device discovery via **macOS IOBluetooth APIs**
+- Status bar UI using **NSStatusItem**
+- Notifications managed through **UserNotifications**
 
 ## Challenges
 

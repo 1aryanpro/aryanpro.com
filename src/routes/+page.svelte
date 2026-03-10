@@ -6,6 +6,10 @@
     import workExperience from "$lib/work-experience.json";
 </script>
 
+<svelte:head>
+    <title>aryanpro</title>
+</svelte:head>
+
 <Hero>
     <div class="flex gap-8">
         <div class="flex-3">
@@ -22,7 +26,7 @@
 
 <section class="responsive-width flex gap-2 mt-3">
     <a class="btn flex-1 h-12 text-xl" href="/resume.pdf">Resume</a>
-    <a class="btn flex-1 h-12 text-xl bg-red" href="/projects">Projects</a>
+    <a class="btn flex-1 h-12 text-xl" href="/projects">Projects</a>
 </section>
 
 <section class="responsive-width mt-6">

@@ -1,7 +1,7 @@
 [
     {
         "title": "Restaurant Waste Tracking System",
-        "date": "2025-04-18",
+        "date": "2025-08",
         "summary": "Data collection and analysis system for tracking prepared vs leftover quantities in a buffet environment, enabling trend analysis and waste reduction.",
         "langs": [
             "SQL",
@@ -12,13 +12,12 @@
             "Analytics"
         ],
         "links": {
-            "demo": "asdfafd",
-            "repo": "asdfafd"
+            "repo": "https://github.com/1aryanpro/Sri-Radhas-Wastage"
         }
     },
     {
         "title": "Technical Indicator Backtesting Engine",
-        "date": "2024-12-15",
+        "date": "2023-04",
         "summary": "Implemented technical indicators and a backtesting framework from scratch only using market APIs.",
         "langs": [
             "Javascript",
@@ -28,12 +27,12 @@
             "Finance"
         ],
         "links": {
-            "repo": ""
+            "repo": "https://github.com/1aryanpro/macd-alg"
         }
     },
     {
         "title": "Trading Log Website",
-        "date": "2024-11-30",
+        "date": "2024-09",
         "summary": "Lightweight web app for recording discretionary trades and post-trade analysis. Posted weekly updates and calculated long term trends.",
         "langs": [
             "Svelte"
@@ -41,9 +40,21 @@
         "tags": [
             "Finance",
             "Full Stack"
+        ]
+    },
+    {
+        "title": "aryanpro.com",
+        "date": "2026-02",
+        "summary": "A simple personal portfolio site written in Svelte to showcase my projects and my design skills. It's also a way for people to contact me and find my socials.",
+        "langs": [
+            "Svelte"
+        ],
+        "tags": [
+            "UI Design",
+            "Full Stack"
         ],
         "links": {
-            "demo": ""
+            "repo": "https://github.com/1aryanpro/aryanpro.com"
         }
     }
 ]

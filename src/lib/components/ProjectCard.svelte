@@ -1,11 +1,36 @@
 <script>
-    let { title, langs, tags, summary, hasWriteup, slug, links } = $props();
+    let { title, langs, tags, summary, hasWriteup, slug, links, date } =
+        $props();
+
+    function cap(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    const dateStr = new Date(
+        date + (date.length === 7 ? "-01" : ""),
+    ).toLocaleString("en-US", {
+        month: "short",
+        year: "numeric",
+        timeZone: "UTC",
+    });
 </script>
 
-<div class="card {hasWriteup ? 'border-red shadow-lg/50 shadow-red' : ''}">
+<div
+    class="card transition-all {hasWriteup
+        ? `border-red shadow-lg/50 shadow-red hover:-translate-y-1.5 hover:shadow-2xl`
+        : ''}"
+>
     <div>
-        <h4 class="text-xl/5">{title}</h4>
-        <div class="flex flex-wrap gap-1 my-1">
+        <div class="flex">
+            <h4 class="text-xl/5">{title}</h4>
+            <p
+                class="flex-1 text-right whitespace-nowrap leading-none
+                opacity-80"
+            >
+                {dateStr}
+            </p>
+        </div>
+        <div class="flex flex-wrap gap-1 mt-1.5">
             {#each langs as lang}
                 {@const displayLang = lang.replace(" ", "-")}
                 <span class="text-red text-base/3">@{displayLang}</span>
@@ -17,24 +42,23 @@
         </div>
     </div>
 
-    <p class="text-base/5">{summary}</p>
+    <p class="text-base/5 flex-1">{summary}</p>
 
-    {#if links}
-        <div
-            class="flex flex-1 w-full gap-3 items-center {hasWriteup
-                ? 'orange'
-                : ''}"
-        >
-            {#if links.repo}
-                <a href={links.repo} class="btn btn-compact flex-1">Repo</a>
-            {/if}
-            {#if links.demo}
-                <a href={links.demo} class="btn btn-compact flex-1">Demo</a>
-            {/if}
-        </div>
-    {/if}
-
-    {#if hasWriteup}
-        <a class="text-red underline" href="/projects/{slug}">See More...</a>
-    {/if}
+    <div class="flex w-full gap-3 items-center font-semibold">
+        {#each Object.keys(links || {}) as linkKey}
+            <a
+                href={links[linkKey]}
+                target="_blank"
+                >[<span
+                    class="text-{hasWriteup ? 'red' : 'purple-fg'} underline"
+                    >{cap(linkKey)}</span
+                >]</a
+            >
+        {/each}
+        {#if hasWriteup}
+            <a class="text-red text-right flex-1" href="/projects/{slug}"
+                >See More...</a
+            >
+        {/if}
+    </div>
 </div>

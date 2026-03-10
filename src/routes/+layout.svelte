@@ -1,6 +1,6 @@
 <script>
     import "./layout.css";
-    import favicon from "$lib/assets/favicon.svg";
+    import favicon from "/favicon.svg";
     import BottomBend from "$lib/components/BottomBend.svelte";
 
     let { children } = $props();
@@ -15,7 +15,7 @@
 
 <nav class="py-5 md:px-2 bg-ink">
     <div class="responsive-width flex justify-between text-surface">
-        <a href="/" class="text-3xl font-bold"
+        <a href="/" class="text-3xl font-bold font-title"
             >aryan<span class="text-purple">pro</span></a
         >
         <div class="flex items-center">
@@ -24,7 +24,7 @@
                     href={item.href}
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noreferrer" : undefined}
-                    class="pl-4 text-xl hover:cursor-pointer"
+                    class="ml-4 text-xl hover:cursor-pointer"
                 >
                     {item.label}
                 </a>
@@ -42,12 +42,12 @@
         <BottomBend />
     </div>
     <div class="bg-ink text-surface pt-8 pb-2 sm:pb-4 text-sm -mt-px">
-        <div class="responsive-width grid sm:grid-cols-3 gap-5">
-            <div class="text-center sm:text-left">
+        <div class="responsive-width grid sm:grid-cols-3 gap-3 text-center">
+            <div class="text-center">
                 <h2 class="uppercase tracking-wider font-semibold">
                     Aryan Prodduturi
                 </h2>
-                <p class="sm:mt-4 max-w-xs mx-auto sm:mx-0">
+                <p class="sm:mt-4 max-w-xs mx-auto">
                     Open to freelance and full-time opportunities. Let's build
                     something together.
                 </p>
@@ -57,21 +57,21 @@
                 <h3 class="font-semibold uppercase tracking-wider sm:mb-4">
                     interested?
                 </h3>
-                <a href="/resume.pdf" class="block">Download My Resume</a>
+                <a href="/resume.pdf" class="block sm:mb-2">Download My Resume</a>
                 <a href="/resume.pdf" class="block">Meet With Me</a>
             </div>
 
-            <div class="text-center sm:text-right">
+            <div class="text-center">
                 <h3 class="font-semibold uppercase tracking-wider">Connect</h3>
                 <ul class="sm:mt-4 sm:space-y-2">
                     <li>
-                        <a href="mailto:you@email.com" class="hover:text-white">
-                            you@email.com
+                        <a href="/contact">
+                            Email Form
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white">GitHub</a> ·
-                        <a href="#" class="hover:text-white">LinkedIn</a>
+                        <a href="#">GitHub</a> ·
+                        <a href="#">LinkedIn</a>
                     </li>
                 </ul>
             </div>
