@@ -58,3 +58,20 @@ than the ones we've already searched.
 
 This allowed me to increase my search depth to ~15 even with the same time taken
 for each calculation.
+
+## Iterative Deepening
+
+Iterative deepening is method of running minimax by doing a full search at depth
+1 deepening the search once we get an answer. Iterative deepening isn't exactly
+an optimization but it does technically reduce the search space slightly. It is
+more useful for building a UI around the algorithm because it lets us display an
+answer at any given step.
+
+![Web Filler Algorithm Screenshot](/filler-alg.png)
+
+As you can see from the screenshot, the current depth that the evaluations are
+being displayed from is 14. The user can still interact with the page, while
+another background process tries to deepen the search to depth 16.
+
+<!-- ## Final Results -->
+

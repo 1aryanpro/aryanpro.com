@@ -15,7 +15,7 @@
 
 <nav class="py-5 md:px-2 bg-ink">
     <div class="responsive-width flex justify-between text-surface">
-        <a href="/" class="text-3xl font-bold font-title"
+        <a href="/" class="text-2xl sm:text-3xl font-bold font-title"
             >aryan<span class="text-purple">pro</span></a
         >
         <div class="flex items-center">

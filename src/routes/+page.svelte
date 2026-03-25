@@ -15,7 +15,7 @@
         <div class="flex-3">
             <h1
                 class="underline decoration-purple decoration-6
-                underline-offset-5 text-8xl"
+                underline-offset-5 sm:text-8xl"
             >
                 Aryan Prodduturi
             </h1>
