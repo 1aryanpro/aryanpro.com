@@ -59,7 +59,7 @@
 
 <section class="responsive-width mt-6">
     <h2 class="text-4xl text-purple-fg">Work Experience:</h2>
-    <div class="max-w-xl mx-auto mt-4 flex flex-col gap-4">
+    <div class="mx-auto mt-4 grid lg:grid-cols-2 gap-4">
         {#each workExperience as job}
             <WorkCard {...job} />
         {/each}

@@ -56,5 +56,47 @@
         "links": {
             "repo": "https://github.com/1aryanpro/aryanpro.com"
         }
+    },
+    {
+        "title": "1VIM Neovim Config",
+        "date": "2021-11",
+        "summary": "A minimalistic neovim configuration that functions as a complete IDE. Semi-regularly updated to add/improve functionality and keep compatibility with latest neovim versions.",
+        "langs": ["Lua", "Vim Script"],
+        "tags": [],
+        "links": {
+            "repo": "https://github.com/1aryanpro/nvim"
+        }
+    },
+    {
+        "title": "SpotifyWrapper",
+        "date": "2024-04",
+        "summary": "An android studio app that uses that spotify api to create a spotify-wrapped-like experience that sums up top artists, top songs, and different listening time metrics.",
+        "langs": ["Java"],
+        "tags": ["Android Studio", "Agile/Scrum"],
+        "links": {
+            "repo": "https://github.com/1aryanpro/SpotifyWrapper"
+        }
+    },
+    {
+        "title": "Algorithm Analysis Paper",
+        "date": "2023-04",
+        "summary": "Mathematics paper exploring an algorithm to solve a combinatorial dice game. Discovered and proved a winning strategy depending on different parameters of the game setup.",
+        "langs": ["JS"],
+        "tags": ["Discrete Math", "Combinatorics"],
+        "links": {
+            "repo": "https://github.com/1aryanpro/grid-game",
+            "demo": "https://1aryanpro.github.io/grid-game/",
+            "paper": "/grid_game_algo.pdf"
+        }
+    },
+    {
+        "title": "Battleship AI",
+        "date": "2023-05",
+        "summary": "Algorithm to find optimal move in a Game Pidgeon battleship game. Configurable for different rule-sets and board sizes. Monte-carlo simulation of ~10,000 games for each move depending on game state.",
+        "langs": ["Node.js"],
+        "tags": ["Monte-carlo Simulation"],
+        "links": {
+            "repo": "https://github.com/1aryanpro/Battleship-AI"
+        }
     }
 ]

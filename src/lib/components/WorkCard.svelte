@@ -2,7 +2,7 @@
     const { company, role, start, end, bullets } = $props();
 </script>
 
-<div class="card pr-5">
+<div class="card pr-5 max-w-xl mx-auto">
     <div class="flex">
         <h3 class="text-xl">{role}</h3>
         <p class="text-lg flex-1 text-right">
