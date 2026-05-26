@@ -13,10 +13,12 @@
         year: "numeric",
         timeZone: "UTC",
     });
+
+    const isHighlighted = hasWriteup || links?.paper != undefined;
 </script>
 
 <div
-    class="card transition-all {hasWriteup
+    class="card transition-all {isHighlighted
         ? `border-red shadow-lg/50 shadow-red hover:-translate-y-1.5 hover:shadow-2xl`
         : ''}"
 >
@@ -46,17 +48,15 @@
 
     <div class="flex w-full gap-3 items-center font-semibold">
         {#each Object.keys(links || {}) as linkKey}
-            <a
-                href={links[linkKey]}
-                target="_blank"
+            <a href={links[linkKey]} target="_blank"
                 >[<span
-                    class="text-{hasWriteup ? 'red' : 'purple-fg'} underline"
+                    class="text-{isHighlighted ? 'red' : 'purple-fg'} underline"
                     >{cap(linkKey)}</span
                 >]</a
             >
         {/each}
-        {#if hasWriteup}
-            <a class="text-red text-right flex-1" href="/projects/{slug}"
+        {#if isHighlighted}
+            <a class="text-red text-right flex-1" href={hasWriteup ? "/projects/{slug}" : links.paper}
                 >See More...</a
             >
         {/if}

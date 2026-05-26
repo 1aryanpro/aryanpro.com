@@ -1,5 +1,5 @@
 ---
-title: Game Pidgeon Filler Algorithm
+title: GP Filler Algorithm
 date: 2026-03
 summary: An minimax algorithm to solve the filler game on Game Pidgeon. Used various optimizations to look ahead as deep as possible to give the best move output.
 langs: [JS, P5.js]

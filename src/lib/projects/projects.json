@@ -1,6 +1,6 @@
 [
     {
-        "title": "Restaurant Waste Tracking System",
+        "title": "Waste Tracking System",
         "date": "2025-08",
         "summary": "Data collection and analysis system for tracking prepared vs leftover quantities in a buffet environment, enabling trend analysis and waste reduction.",
         "langs": [
@@ -20,7 +20,6 @@
         "date": "2023-04",
         "summary": "Implemented technical indicators and a backtesting framework from scratch only using market APIs.",
         "langs": [
-            "Javascript",
             "Node.js"
         ],
         "tags": [
@@ -61,7 +60,7 @@
         "title": "1VIM Neovim Config",
         "date": "2021-11",
         "summary": "A minimalistic neovim configuration that functions as a complete IDE. Semi-regularly updated to add/improve functionality and keep compatibility with latest neovim versions.",
-        "langs": ["Lua", "Vim Script"],
+        "langs": ["Lua", "VimScript"],
         "tags": [],
         "links": {
             "repo": "https://github.com/1aryanpro/nvim"
@@ -94,9 +93,49 @@
         "date": "2023-05",
         "summary": "Algorithm to find optimal move in a Game Pidgeon battleship game. Configurable for different rule-sets and board sizes. Monte-carlo simulation of ~10,000 games for each move depending on game state.",
         "langs": ["Node.js"],
-        "tags": ["Monte-carlo Simulation"],
+        "tags": ["Monte-Carlo Simulation"],
         "links": {
             "repo": "https://github.com/1aryanpro/Battleship-AI"
+        }
+    },
+    {
+        "title": "sriradhas.com",
+        "date": "2026-01",
+        "summary": "A homepage programmed and designed from scratch using Svelte to market the business and facilitate online ordering. Optimzied for both mobile and desktop viewing.",
+        "langs": ["Svelte"],
+        "tags": ["UI/UX Design"],
+        "links": {
+            "site": "https://www.sriradhas.com"
+        }
+    },
+    {
+        "title": "Terminal Physics Simulator",
+        "date": "2021-06",
+        "summary": "An optimzed particle and orbital physics simulator written in C++. Uses ncurses to render simulation in a terminal window.",
+        "langs": ["C++"],
+        "tags": ["ncurses"],
+        "links": {
+            "repo": "https://github.com/1aryanpro/TerminalAnimations"
+        }
+    },
+    {
+        "title": "Shape Machine Ellipse Extension",
+        "date": "2026-05",
+        "summary": "Mathematically intensive ellipse extension to Shape Machine and Rhino plugin via linear algebra and closed form solutions to elliptical curves and conics. See paper for more details.",
+        "langs": ["Python"],
+        "tags": ["Rhino", "Linear Algebra"],
+        "links": {
+            "paper": "/sm-ellipse.pdf"
+        }
+    },
+    {
+        "title": "",
+        "date": "",
+        "summary": "",
+        "langs": [],
+        "tags": [],
+        "links": {
+
         }
     }
 ]
