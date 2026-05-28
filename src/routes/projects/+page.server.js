@@ -14,7 +14,6 @@ export const load = async () => {
             };
         })
 
-
     const short = (shortProjects ?? [])
         .map((p) => ({ ...p, hasWriteup: false }))
 
