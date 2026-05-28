@@ -24,10 +24,10 @@
         : `shadow-purple hover:shadow-lg`;
 </script>
 
-<!-- <div class="h-auto relative"> -->
+<div class="h-45 relative">
     <div
-        class="card transition-all {cardStyles} group
-        h-auto "
+        class="card transition-all {cardStyles} group absolute hover:z-20
+        h-45 hover:h-62 hover:-translate-y-10 hover:-translate-x-[4.5%] w-full hover:w-[110%]"
     >
         <div>
             <div class="flex">
@@ -53,7 +53,7 @@
         </div>
 
         <p
-            class="text-base/5 flex-1 flex overflow-hidden"
+            class="text-base/5 flex-1 flex group-hover:items-center overflow-hidden"
         >
             {summary}
         </p>
@@ -71,10 +71,10 @@
             <p
                 class="text-right flex-1 text-{highlight
                     ? 'red'
-                    : 'purple-fg'} hidden"
+                    : 'purple-fg'} group-hover:hidden"
             >
                 More...
             </p>
         </div>
     </div>
-<!-- </div> -->
+</div>

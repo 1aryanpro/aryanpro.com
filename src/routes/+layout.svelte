@@ -58,7 +58,7 @@
                     interested?
                 </h3>
                 <a href="/resume.pdf" class="block sm:mb-2">Download My Resume</a>
-                <a href="/resume.pdf" class="block">Meet With Me</a>
+                <a href="/contact" class="block">Meet With Me</a>
             </div>
 
             <div class="text-center">
@@ -70,8 +70,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">GitHub</a> ·
-                        <a href="#">LinkedIn</a>
+                        <a href="https://github.com/1aryanpro">GitHub</a> ·
+                        <a href="https://www.linkedin.com/in/aryanpro/">LinkedIn</a>
                     </li>
                 </ul>
             </div>
